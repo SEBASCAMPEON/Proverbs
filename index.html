@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Sebastian Gallego - Full Stack Web Developer" />
+    <title>
+        Proverbios App
+    </title>
+    <link rel="icon" href="assets/img/cmbdefico.ico"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito:ital,wght@0,200;0,300;0,800;0,900;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+    </header>
+    <div class="container">
+        <ul class="square">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul class="square2">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="cont_switcher">
+            <input type="button" value="Añadir proverbio" onclick="showForm();">
+        </div>
+
+        <form id="formul" method="get">
+            <input class="input" type="text" name="versiculo" placeholder="Versiculo" id="prov" required>
+            <textarea class="input" name="contentprov" rows="10" cols="50" id="contentprov" required></textarea>
+            <input type="submit" value="Hecho" onclick="takeData(versiculo, contentprov);">
+            <div class="cont_switcher">
+                <input type="button" value="Cancelar" onclick="hideForm();" disabled>
+            </div>
+        </form>
+
+        <div class="messagecontainer">
+            <div>
+                <h2 class="titulo"></h2>
+                <p class="parrafo"></p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
