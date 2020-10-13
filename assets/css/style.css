@@ -6,6 +6,21 @@ body{
     font-family: 'Nunito', sans-serif;
     background-size:cover; 
 }
+.devsign{
+    position: fixed;
+    left:.5em;
+    bottom:.2em;
+    font-size:.7em;
+    color:white;
+}
+.fontName{
+    position: fixed;
+    left:1em;
+    top:3em;
+    font-size: 1.5em;
+    color:white; 
+    font-weight: bold;
+}
 .header{
     position: fixed;
     top:0;
@@ -32,7 +47,7 @@ body{
 /*mensaje*/
 .messagecontainer{
     border:1px solid rgba(46, 46, 46, 0.123);;
-    background: rgba(222, 222, 222, 75%);
+    background: rgba(222, 222, 222, 0.70);
     max-width: 70%;
     max-height: 50%;
     min-width: 50%;
@@ -46,11 +61,13 @@ body{
 }
 .titulo{
     /*color:rgba(207, 92, 24, 0.75);*/
-    font-size:3.5em;
+    font-size:3.7em;
+    padding: 0;
 }
 .parrafo{
     /*color:rgb(35 95 123 / 93%);*/
-    font-size:3em;
+    font-size:3.2em;
+    padding: 0 .5em 0 .5em;
 }
 #formul{
     z-index:10;
@@ -79,6 +96,8 @@ body{
 
 input{
     cursor:pointer;
+    z-index: 100;
+    font-size: .9em;
 }
 input[type="button"]{
     background: #3b5777;
@@ -95,6 +114,10 @@ input[type="submit"]{
     margin:.2em;
     border-radius:5px;
     font-weight: bold;
+}
+
+#autochangebutton{
+    background-color: #3d7d28;
 }
 
 .theme_switcher{

@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Sebastian Gallego - Full Stack Web Developer" />
     <title>
-        Proverbios App
+        Proverbs App
     </title>
-    <link rel="icon" href="assets/img/cmbdefico.ico"/>
+    <link rel="icon" href="assets/img/feather-pen.ico" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito:ital,wght@0,200;0,300;0,800;0,900;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -48,7 +52,7 @@
             <li></li>
         </ul>
         <div class="cont_switcher">
-            <input type="button" value="Añadir proverbio" onclick="showForm();">
+            <input type="button" value="Añadir cita" onclick="showForm();">
         </div>
 
         <form id="formul" method="get">
@@ -56,21 +60,28 @@
             <textarea class="input" name="contentprov" rows="10" cols="50" id="contentprov" required></textarea>
             <input type="submit" value="Hecho" onclick="takeData(versiculo, contentprov);">
             <div class="cont_switcher">
-                <input type="button" value="Cancelar" onclick="hideForm();" disabled>
+                <input type="button" value="Cancelar" onclick="hideForm();">
             </div>
         </form>
 
         <div class="messagecontainer">
             <div>
-                <h2 class="titulo"></h2>
-                <p class="parrafo"></p>
+                <div class="titulo"></div>
+                <div class="parrafo"></div>
             </div>
         </div>
 
         <div class="theme_switcher">
+            <input type="button" value="Change Font" onclick="changeFont();">
             <input type="button" value="Change Theme" onclick="changeTheme();">
+            <input id="autochangebutton" type="button" value="Activate automatic change theme" onclick="changeEstateForAutoTheme();">
         </div>
     </div>
+    <p class="devsign">Bastianburst</p>
+
+    <p class="fontName"></p>
+
+
     <script src="assets/js/main.js"></script>
 </body>
 
